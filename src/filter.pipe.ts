@@ -6,7 +6,7 @@ import { isUndefined } from 'util';
 })
 export class FilterPipe implements PipeTransform {
 
-  transform (items: Array<Object>, query?: string): Array<Object> {
+  transform (items: any, query?: string): any {
 
     if (isUndefined(query)) {
       return items;
